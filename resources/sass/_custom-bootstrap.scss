@@ -1,0 +1,50 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+        fill: currentColor;
+        stroke: currentColor;
+    }
+}
+
+.btn-primary,
+.btn-success {
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+        color: $white;
+    }
+}
+
+.btn-outline-primary,
+.btn-outline-success {
+    
+    &:hover,
+    &:active,
+    &.active {
+        color: $white;
+    }
+}
+
+.btn-check {
+
+    &:checked,
+    &:active {
+
+        + .btn-outline {
+
+            &-primary,
+            &-success {
+                color: $white;
+            }
+        }
+    }
+}

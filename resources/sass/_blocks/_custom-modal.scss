@@ -1,0 +1,98 @@
+.custom-modal {
+
+    .modal-dialog {
+        max-width: 729px;
+    }
+
+    &__content {
+        background-color: $white;
+        padding: 32px;
+        position: relative;
+        pointer-events: auto;
+        width: 100%;
+    }
+
+    &__close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        padding: 0;
+        border: none;
+        background: none;
+        line-height: 0;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__text {
+        margin-top: 16px;
+
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__checks {
+        margin-top: 24px;
+    }
+
+    &__checks-wrap {
+
+        .form-check {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__check-delete {
+        margin-left: 4px;
+        margin-bottom: 2px;
+        border: none;
+        padding: 0;
+        background: none;
+        line-height: 0;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: $gray-400;
+        }
+    }
+
+    &__checks-add {
+        display: flex;
+        padding-bottom: 8px;
+
+        .form-control {
+            width: 185px;
+        }
+
+        .btn {
+            margin-left: 16px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        width: 100%;
+        margin-top: 32px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .generator__params-row {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .generator__params-col {
+        min-width: 204px;
+        flex-grow: 0;
+
+        &:last-child {
+            flex-grow: 0;
+        }
+    }
+}

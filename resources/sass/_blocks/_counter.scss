@@ -1,0 +1,45 @@
+.counter {
+    position: relative;
+
+    &__input {
+        padding-left: 31px;
+        padding-right: 31px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    &__minus,
+    &__plus {
+        position: absolute;
+        width: 16px;
+        height: 28px;
+        top: 4px;
+        border: none;
+        background: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: $gray-400;
+        }
+    }
+
+    &__minus {
+        left: 8px;
+    }
+
+    &__plus {
+        right: 8px;
+    }
+}

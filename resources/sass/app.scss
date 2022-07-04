@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+@import "vars";
+@import "libs";
+@import "svg";
+@import "common";
+@import "custom-bootstrap";
+
+// "мелкие" блоки (могут миксоваться с элементами других блоков, поэтому должны идти раньше для возможности переопределения их стилей)
+@import "_blocks/counter";
+
+// "крупные" блоки
+@import "_blocks/header";
+@import "_blocks/generator";
+@import "_blocks/faq";
+@import "_blocks/footer";
+@import "_blocks/custom-modal";
+@import "_blocks/generator-import";

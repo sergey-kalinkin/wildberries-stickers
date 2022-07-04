@@ -1,0 +1,31 @@
+.generator-import {
+    margin-top: 32px;
+
+    &__step {
+        margin-top: 32px;
+    }
+
+    &__step-title {
+        margin-bottom: 16px;
+    }
+
+    &__step-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__step-link {
+        margin-left: 24px;
+    }
+
+    &__step-text {
+
+        a {
+            color: $success;
+        }
+    }
+
+    &__upload-file {
+        max-width: 361px;
+    }
+}

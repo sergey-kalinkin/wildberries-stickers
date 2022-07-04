@@ -1,0 +1,21 @@
+.footer {
+    background-color: $light;
+    padding: 18px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info {
+        margin-right: auto;
+        color: $secondary;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        margin-left: 24px;
+        text-decoration: underline;
+        color: $secondary;
+    }
+}
